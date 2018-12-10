@@ -8,7 +8,7 @@ describe("Donate page", () => {
     });
   
     it("allows a valid donation to be submitted", () => {
-       // Fill out web form
+      
         cy.get('#paymenttype').select('Visa')
         cy.get('input[data-test=amount]').type(321);
         cy.get('label').contains('Message').next().type('Best wishes');
